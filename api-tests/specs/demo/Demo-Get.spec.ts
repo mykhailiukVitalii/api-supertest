@@ -1,5 +1,5 @@
 import { StatusCodes } from 'http-status-codes';
-import supertest = require('supertest');
+import * as supertest from 'supertest';
 
 describe('SUITE-1: Sample example', function () {
     it('/GET - All books', async () => {

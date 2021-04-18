@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf ./dist && npx tsc && cp -R ./api-tests/response ./dist/",
-    "test:demo": "jest ./dist/**.spec.js --testTimeout 35000"
+    "test:demo": "jest ./dist/specs/demo/*.spec.js --testTimeout 35000",
+    "test:books": "jest ./dist/specs/books/*.spec.js --testTimeout 35000"
   },
   "keywords": [
     "api"
